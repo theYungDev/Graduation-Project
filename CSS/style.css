@@ -1,8 +1,8 @@
 *{
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
 }
 
-
+/* adjusting carousel */
 .c-item{
     height: 600px;
 }
@@ -10,4 +10,25 @@
 .c-img{
     height: 100%;
     object-fit: cover;
+}
+
+.what-we-offer{
+    height: 500px;
+    width: 100%;
+    background-color: gray;
+}
+.wide-card{
+    height: 157px;
+    background-color: blue;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
