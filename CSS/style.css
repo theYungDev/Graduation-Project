@@ -1,6 +1,15 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
+/*shortcuts*/
+:root{
+    --txt-1:#192F59;
+    --white:#FFFFFF;
+}
+.txt-1{
+    color: #192F59;
+}
+
 
 /* adjusting carousel */
 .c-item{
@@ -15,13 +24,16 @@
 .what-we-offer{
     height: 500px;
     width: 100%;
-    background-color: gray;
+    background-color: #FFFFFF;
+
 }
 .wide-card{
     height: 157px;
-    background-color: blue;
+    width: 80%;
+    background-color: #FFFFFF;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    padding-bottom: 200px;
 }
 .card{
     height: 100%;
@@ -31,4 +43,20 @@
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
+    background-color: #FFFFFF;
+}
+.card .icon{
+    height: 40px;
+    width: 40px;
+}
+.card .icon img{
+    height: 100%;
+    width: 100%;
+}
+.card .txt .s1{
+    color:#192F59;
+}
+.card .txt .s2{
+    color:#B9B9B9;
+    ;
 }
