@@ -1,15 +1,14 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
-/*shortcuts*/
-:root{
-    --txt-1:#192F59;
-    --white:#FFFFFF;
-}
-.txt-1{
+/*----shortcuts------*/
+.txt-color{
     color: #192F59;
 }
-
+.txt-white{
+    color:#FFFFFF
+}
+/*-----shortcuts------*/
 
 /* adjusting carousel */
 .c-item{
@@ -22,7 +21,7 @@
 }
 
 .what-we-offer{
-    height: 200vh;
+    /* height: 200vh; */
     width: 100%;
     background-color: #FFFFFF;
 
@@ -50,4 +49,9 @@
 .card .txt .s2{
     color:#B9B9B9;
     ;
+}
+.about-university{
+    background-image: url(../Assets/images/8.jpg);
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(25, 47, 89,0.75);
 }
