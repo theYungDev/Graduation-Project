@@ -5,8 +5,14 @@
 .txt-color{
     color: #192F59;
 }
-.txt-white{
-    color:#FFFFFF
+.txt-green{
+    color:#00D084;
+}
+.txt-gray{
+    color: #B9B9B9;
+}
+.dark-layer{
+    box-shadow: inset 0 0 0 1000px rgba(25, 47, 89,0.8);
 }
 /*-----shortcuts------*/
 
@@ -19,20 +25,9 @@
     height: 100%;
     object-fit: cover;
 }
-
-.what-we-offer{
-    /* height: 200vh; */
-    width: 100%;
-    background-color: #FFFFFF;
-
-}
 .wide-card{
     height: 157px;
     width: 100%;
-    background-color: #FFFFFF;
-}
-.card{
-    height: 100%;
     background-color: #FFFFFF;
 }
 .card .icon{
@@ -48,10 +43,9 @@
 }
 .card .txt .s2{
     color:#B9B9B9;
-    ;
 }
 .about-university{
     background-image: url(../Assets/images/8.jpg);
     background-size: cover;
-    box-shadow: inset 0 0 0 1000px rgba(25, 47, 89,0.75);
+    box-shadow: inset 0 0 0 1000px rgba(25, 47, 89,0.8);
 }
