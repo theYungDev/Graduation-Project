@@ -6,7 +6,8 @@
     <title>Smart Academy</title>
     <link rel="stylesheet" href="CSS/bootstrap.min.css" />
     <link rel="stylesheet" href="CSS/style.css" />
-    <script src="script/bootstrap.bundle.min.js"></script>
+    <script defer src="script/bootstrap.bundle.min.js"></script>
+    <script defer src="script/index.js"></script>
   </head>
 
   <body>
@@ -96,7 +97,7 @@
         </div>
       </div>
     </div>
-
+    <!-- Wide card -->
     <div class="d-flex flex-column align-items-center">
       <div class="container border border-0 shadow rounded-top-3 my-3 w-75">
         <div class="row">
@@ -146,13 +147,15 @@
           </div>
         </div>
       </div>
-      <div class="heading h1 fw-bold txt-color my-4">What We Offer</div>
+      <div class="heading h1 fw-bold txt-color1 my-4">What We Offer</div>
       <div class="row">
         <div class="col-sm-6 p-0"></div>
         <div class="col-sm-6 p-0"></div>
       </div>
     </div>
-    <div class="about-university my-5 py-3">
+    <!-- what we offer cards -->
+    <!-- About university -->
+    <div class="about-university py-3">
       <div class="container z-2">
         <div class="row my-5 py-5">
           <div class="col-sm-5">
@@ -211,10 +214,53 @@
           <div class="col-sm-3">
             <section class="m-3 p-2 text-center">
               <div class="card border-0 bg-transparent">
-                <div class="span fs-1 txt-green">40</div>
+                <div class="span fs-1 fw-semibold txt-green">40</div>
                 <div class="span fs-3 text-white">Awards Won</div>
               </div>
             </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- our fields -->
+    <div class="container">
+      <div class="row">
+        <span class="fs-1 fw-semibold txt-color1 text-center py-5"
+          >Our Fields</span
+        >
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-sm-12">
+          <div
+            id="hover1"
+            class="card"
+            style="
+              background-image: url(./Assets/images/12.png);
+              background-size: cover;
+              height: 500px;
+            "
+          >
+            <div id="card1" class="card-body position-absolute bottom-0">
+              <span
+                class="px-2 my-3 fs-1 text-white fw-semibold bg-black bg-gradient bg-opacity-10"
+                >Electric Engineering</span
+              >
+              <section class="text-white d-none">
+                <p class="p-2 fs-3">
+                  Electrical engineers are responsible for creating innovative
+                  solutions in areas such as power generation, distribution,
+                  communication, control systems, and electronic circuits.<span
+                    >Read More</span
+                  >
+                </p>
+                <button
+                  id="button1"
+                  class="px-3 py-2 bg-white txt-green fw-semibold"
+                >
+                  Read More
+                </button>
+              </section>
+            </div>
           </div>
         </div>
       </div>
