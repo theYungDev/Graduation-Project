@@ -36,6 +36,12 @@
     object-fit: cover;
 }
 /* ---------------------- */
+.button{
+    background-color: transparent;
+    color: #00d084;
+    border:2px solid  rgb(0, 208, 132);
+    border-radius: 15px;
+}
 .wide-card{
     height: 157px;
     width: 100%;
