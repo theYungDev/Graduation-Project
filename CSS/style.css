@@ -99,3 +99,10 @@
 .hover2:hover .hover2e{
     display: block;
 }
+/* carousel indicator shape */
+.indicator-pill-shaped{
+    height: 7px!important;
+    width: 25px!important;
+    border-radius: 25px!important;
+    border: 0px!important;
+}

@@ -701,24 +701,25 @@
       </div>
     </div>
     <!-- aboutUs -->
-    <div class="container">
+    <div class="container py-3">
       <div class="row">
-        <h1 class="fw-semibold txt-darkblue text-center py-5">
+        <h1 class="fw-semibold txt-darkblue text-center">
           Student Says About Us
         </h1>
       </div>
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 w-50 mx-auto">
           <div
-            id="carouselExampleIndicators"
-            class="carousel slide carousel-fade bg-danger"
+            id=" carouselExampleAutoPlaying"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
           >
             <div class="carousel-indicators">
               <button
                 type="button"
                 data-bs-target="#carouselExampleIndicators"
                 data-bs-slide-to="0"
-                class="active"
+                class="active bg-success indicator-pill-shaped"
                 aria-current="true"
                 aria-label="Slide 1"
               ></button>
@@ -737,42 +738,81 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <div>
-                  <img src="Assets/images/27.jpg" class="img-fluid" alt="" />
-                  <div>
+                <div
+                  class="d-flex align-items-center justify-content-center py-4"
+                >
+                  <div
+                    class="rounded-circle bg-black"
+                    style="
+                      height: 80px;
+                      width: 25%;
+                      background-image: url(Assets/images/27.jpg);
+                      background-position: center;
+                      background-size: cover;
+                    "
+                  ></div>
+                  <div class="mx-5 d-flex flex-column">
                     <p>
-                      The academic challenges are intense but rewardingThe
+                      The academic challenges are intense but rewarding The
                       professors are approachable and genuinely care about your
                       success.
                     </p>
-                    <span>Henry Dee</span>
-                    <span>Student</span>
+                    <span class="fs-5">Henry Dee</span>
+                    <span class="txt-green">Student</span>
                   </div>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="..." />
+                <div
+                  class="d-flex align-items-center justify-content-center py-4"
+                >
+                  <div
+                    class="rounded-circle bg-black"
+                    style="
+                      height: 80px;
+                      width: 25%;
+                      background-image: url(Assets/images/27.jpg);
+                      background-position: center;
+                      background-size: cover;
+                    "
+                  ></div>
+                  <div class="mx-5 d-flex flex-column">
+                    <p>
+                      The academic challenges are intense but rewarding The
+                      professors are approachable and genuinely care about your
+                      success.
+                    </p>
+                    <span class="fs-5">Zeyad</span>
+                    <span class="txt-green">Student</span>
+                  </div>
+                </div>
               </div>
               <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="..." />
+                <div
+                  class="d-flex align-items-center justify-content-center py-4"
+                >
+                  <div
+                    class="rounded-circle bg-black"
+                    style="
+                      height: 80px;
+                      width: 25%;
+                      background-image: url(Assets/images/27.jpg);
+                      background-position: center;
+                      background-size: cover;
+                    "
+                  ></div>
+                  <div class="mx-5 d-flex flex-column">
+                    <p>
+                      The academic challenges are intense but rewarding The
+                      professors are approachable and genuinely care about your
+                      success.
+                    </p>
+                    <span class="fs-5">Mohamed</span>
+                    <span class="txt-green">Student</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev"
-            >
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next"
-            >
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
         </div>
       </div>
