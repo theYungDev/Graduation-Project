@@ -14,6 +14,17 @@
 .bg-color1{
     background-color: #192F59;
 }
+.carousel-custom-indicators [data-bs-target] {
+    background-color: #00d084!important;
+    height: 9px!important;
+    width: 23.4px!important;
+    border-top-left-radius: 15.6px!important;
+    border-bottom-left-radius: 15.6px!important;
+    border-top-right-radius: 15.6px!important;
+    border-bottom-right-radius: 15.6px!important;
+    border: 0;
+    
+}
 .dark-layer{
     box-shadow: inset 0 0 0 1000px rgba(25, 47, 89,0.6);
 }
@@ -100,9 +111,6 @@
     display: block;
 }
 /* carousel indicator shape */
-.indicator-pill-shaped{
-    height: 7px!important;
-    width: 25px!important;
-    border-radius: 25px!important;
-    border: 0px!important;
+.carousel-custom-indicators{
+    margin: 0;
 }
