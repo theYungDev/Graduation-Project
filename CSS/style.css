@@ -5,11 +5,20 @@
 .txt-darkblue{
     color: #192F59;
 }
+.bg-darkblue{
+    background-color: #192F59;
+}
 .txt-green{
     color:#00d084;
 }
+.bg-green{
+    background-color:#00d084;
+}
 .txt-gray{
     color: #B9B9B9;
+}
+.bg-gray{
+    background-color: #B9B9B9;
 }
 .bg-color1{
     background-color: #192F59;
