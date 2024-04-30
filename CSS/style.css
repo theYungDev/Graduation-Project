@@ -123,3 +123,16 @@
 .carousel-custom-indicators{
     margin: 0;
 }
+
+/* contact us page */
+/* form button */
+.button3{
+    background-color: #00d084;
+    color: #192F59;
+    transition: 0.3s;
+}
+.button3:hover{
+    background-color: #192F59;
+    color: #00d084;
+    transition: 0.3s;
+}
