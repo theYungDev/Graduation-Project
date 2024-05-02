@@ -20,6 +20,9 @@
 .bg-gray{
     background-color: #B9B9B9;
 }
+.bg-table{
+    background-color: #F3F4F6;
+}
 .bg-color1{
     background-color: #192F59;
 }
@@ -135,4 +138,22 @@
     background-color: #192F59;
     color: #00d084;
     transition: 0.3s;
+}
+/* form */
+/* match bg color of floating label */
+.form-floating > input:not(:focus):placeholder-shown + label {
+    background: inherit!important;
+}
+
+.form-floating > input + label:after {
+   background: inherit!important;
+}
+/* change input border blue glow color */
+.form-control:focus {
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0), 0 0 8px rgba(255, 255, 255, 0);
+  }
+/* signin */
+/* student/staff buttons */
+#mybtn1{
+    
 }

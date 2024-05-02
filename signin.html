@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Academy</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script defer src="script/bootstrap.bundle.min.js"></script>
+    <script defer src="script/signin.js"></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary position-sticky top-0 z-1"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand ms-4" href="#"
+          ><img
+            src="Assets/images/logo.png"
+            alt="Smart Academy logo"
+            class="w-75 h-75"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0 fs-5">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="about.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="fields.html"
+                >Fields</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="events.html"
+                >Events</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="contactus.html"
+                >Contact us</a
+              >
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                  ></path>
+                </svg>
+              </button>
+            </li>
+          </ul>
+
+          <button
+            class="button fs-5 mx-5 px-5 py-1"
+            onclick="location.href='signin.html'"
+            type="submit"
+          >
+            Sign in
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- signin form -->
+    <div class="container-fluid ">
+        
+    <div class="row ">
+      <div class="col-lg-4 bg-table">
+        <div class="w-75 mx-auto py-5">
+          <div class="fw-bold fs-3 my-3" style="color: #1e1e1e">Sign in</div>
+          <!-- account type selector -->
+          <div
+            class="p-2 my-3 w-100 rounded-pill d-flex"
+            style="border: 3px solid #192f59"
+          >
+            <button
+              type="button"
+              id="mybtn1"
+              class="bg-green w-50 py-3 fs-4 fw-semibold border-0 rounded-pill"
+              style="color: white"
+            >
+              Student
+            </button>
+            <button
+              type="button"
+              id="mybtn2"
+              class="w-50 py-3 fs-4 fw-semibold border-0 rounded-pill"
+            >
+              Staff
+            </button>
+          </div>
+          <!-- form -->
+          <form class="position-relative z-0 w-75 my-3">
+            <div
+              class="form-floating mb-3"
+              style="border-bottom: 1px solid black !important"
+            >
+              <input
+                type="email"
+                class="form-control border-0"
+                style="background-color: inherit"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label class="fw-bold txt-gray" for="floatingInput"
+                >Email address</label
+              >
+            </div>
+            <div
+              class="form-floating mb-3"
+              style="border-bottom: 1px solid black !important"
+            >
+              <input
+                type="name"
+                class="form-control border-0"
+                style="background-color: inherit"
+                id="floatingName"
+                placeholder="Namee"
+              />
+              <label class="fw-bold txt-gray" for="floatingName">Name</label>
+            </div>
+
+            <button
+              type="submit"
+              class="bg-green text-white border-0 fw-bold fs-6 w-50 py-3 mt-lg-3 rounded-4"
+            >
+              Sign in
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- carousel -->
+      <div class="col-lg-8"></div>
+    </div>
+    </div>
+  </body>
+</html>
