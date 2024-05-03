@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Academy</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script defer src="script/bootstrap.bundle.min.js"></script>
+    <script defer src="script/dashboard.js"></script>
+  </head>
+  <body class="vh-100">
+    <div class="container-fluid h-100">
+      <div class="row h-100">
+        <!-- panel buttons -->
+        <div class="col-lg-2 px-0 h-100 bg-darkblue">
+          <!-- logo -->
+          <div class="py-5 px-2">
+            <a class="object-fit-contain" href="index.html">
+              <img class="h-100 w-100" src="Assets/images/logo2.png" alt=""
+            /></a>
+          </div>
+
+          <!-- panel buttons -->
+          <div class="list-group w-100" id="list-tab" role="tablist">
+            <a
+              class="list-group-item list-group-item-action active rounded-0 m-0"
+              id="list-home-list"
+              data-bs-toggle="list"
+              href="#list-home"
+              role="tab"
+              aria-controls="list-home"
+            >
+              <div class="">
+                <img
+                  class="h-100 w-auto px-2"
+                  src="Assets/images/36.png"
+                  alt=""
+                />
+                Courses
+              </div>
+            </a>
+            <a
+              class="list-group-item list-group-item-action m-0"
+              id="list-profile-list"
+              data-bs-toggle="list"
+              href="#list-profile"
+              role="tab"
+              aria-controls="list-profile"
+              ><div class="">
+                <img
+                  class="h-100 w-auto px-2"
+                  src="Assets/images/37.png"
+                  alt=""
+                />
+                Profile
+              </div></a
+            >
+            <a
+              class="list-group-item list-group-item-action m-0"
+              id="list-messages-list"
+              data-bs-toggle="list"
+              href="#list-messages"
+              role="tab"
+              aria-controls="list-messages"
+              ><div class="">
+                <img
+                  class="h-100 w-auto px-2"
+                  src="Assets/images/38.png"
+                  alt=""
+                />
+                Assignments
+              </div></a
+            >
+            <a
+              class="list-group-item list-group-item-action m-0 rounded-0"
+              id="list-settings-list"
+              data-bs-toggle="list"
+              href="#list-settings"
+              role="tab"
+              aria-controls="list-settings"
+              ><div class="">
+                <img
+                  class="h-100 w-auto px-2"
+                  src="Assets/images/39.png"
+                  alt=""
+                />
+                Exams
+              </div></a
+            >
+          </div>
+        </div>
+        <!-- dashboard panel information -->
+        <div class="col-lg-10" style="background-color: #f3f4f6">
+          <div class="container py-5">
+            <!-- account photo+info -->
+            <div class="d-flex flex-row mb-">
+              <!-- img -->
+              <div
+                class="rounded-circle"
+                style="
+                  height: 48.51px;
+                  width: 48.51px;
+                  background-image: url(Assets/images/40.jpg);
+                  background-position: center;
+                  background-size: cover;
+                "
+              ></div>
+              <!--  info -->
+              <div class="d-flex flex-column mx-3">
+                <span class="fw-semibold fs-6">Omar Essam</span>
+                <span class="txt-green">#C12400</span>
+              </div>
+            </div>
+            <!-- content panel buttons -->
+            <div
+              class="tab-conten my-5 bg-white rounded-3 py-4 px-3"
+              id="nav-tabContent"
+            >
+              <div
+                class="tab-pane fade show active"
+                id="list-home"
+                role="tabpanel"
+                aria-labelledby="list-home-list"
+              >
+                <div>
+                  <!-- title -->
+                  <div class="fs-3 fw-bold">My Courses</div>
+                  <!-- content -->
+                  <div class="py-4 d-flex flex-wrap w-100">
+                    <div
+                      class="rounded-4 position-relative m-2 hover3"
+                      style="
+                        width: 260px;
+                        height: 250px;
+                        background-image: url(Assets/images/41.jpg);
+                        background-position: center;
+                        background-size: cover;
+                      "
+                    >
+                      <div
+                        class="text-white d-flex flex-column position-absolute"
+                        style="bottom: 20px; left: 10px"
+                      >
+                        <span class="fs-5 fw-bold h5"
+                          >Artificial Intelligence</span
+                        >
+                        <span class="fs-6 txt-gray">#Course Code</span>
+                      </div>
+                    </div>
+                    <div
+                      class="rounded-4 position-relative m-2 hover3"
+                      style="
+                        width: 260px;
+                        height: 250px;
+                        background-image: url(Assets/images/42.jpg);
+                        background-position: center;
+                        background-size: cover;
+                      "
+                    >
+                      <div
+                        class="text-white d-flex flex-column position-absolute"
+                        style="bottom: 20px; left: 10px"
+                      >
+                        <span class="fs-5 fw-bold">Computer Network</span>
+                        <span class="fs-6 txt-gray">#Course Code</span>
+                      </div>
+                    </div>
+                    <div
+                      class="rounded-4 position-relative m-2"
+                      style="
+                        width: 260px;
+                        height: 250px;
+                        background-image: url(Assets/images/43.jpg);
+                        background-position: center;
+                        background-size: cover;
+                      "
+                    >
+                      <div
+                        class="text-white d-flex flex-column position-absolute"
+                        style="bottom: 20px; left: 10px"
+                      >
+                        <span class="fs-5 fw-bold">Software</span>
+                        <span class="fs-6 txt-gray">#Course Code</span>
+                      </div>
+                    </div>
+                    <div
+                      class="rounded-4 position-relative m-2"
+                      style="
+                        width: 260px;
+                        height: 250px;
+                        background-image: url(Assets/images/41.jpg);
+                        background-position: center;
+                        background-size: cover;
+                      "
+                    >
+                      <div
+                        class="text-white d-flex flex-column position-absolute"
+                        style="bottom: 20px; left: 10px"
+                      >
+                        <span class="fs-5 fw-bold"
+                          >Artificial Intelligence</span
+                        >
+                        <span class="fs-6 txt-gray">#Course Code</span>
+                      </div>
+                    </div>
+                    <div
+                      class="rounded-4 position-relative m-2"
+                      style="
+                        width: 260px;
+                        height: 250px;
+                        background-image: url(Assets/images/44.jpg);
+                        background-position: center;
+                        background-size: cover;
+                      "
+                    >
+                      <div
+                        class="text-white d-flex flex-column position-absolute"
+                        style="bottom: 20px; left: 10px"
+                      >
+                        <span class="fs-5 fw-bold">Design</span>
+                        <span class="fs-6 txt-gray">#Course Code</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="list-profile"
+                role="tabpanel"
+                aria-labelledby="list-profile-list"
+              >
+                profile
+              </div>
+              <div
+                class="tab-pane fade"
+                id="list-messages"
+                role="tabpanel"
+                aria-labelledby="list-messages-list"
+              >
+                ...
+              </div>
+              <div
+                class="tab-pane fade"
+                id="list-settings"
+                role="tabpanel"
+                aria-labelledby="list-settings-list"
+              >
+                ...
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of page -->
+      </div>
+    </div>
+  </body>
+</html>
