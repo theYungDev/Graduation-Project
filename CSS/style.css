@@ -14,6 +14,9 @@
 .bg-green{
     background-color:#00d084;
 }
+.bg-light-green{
+    background-color:#00d08418;
+}
 .txt-gray{
     color: #B9B9B9;
 }
@@ -200,12 +203,12 @@ background-color: #00d084!important;
     color: white;
 }
 /* side panel hide content */
-.list-group-item-action.active .panel-item-hide{
+/* .list-group-item-action.active .panel-item-hide{
 display: block!important;
 }
 .list-group-item-action .panel-item-hide{
 display: none!important;
-}
+} */
 /* hover courses */
 .hover3{
     transition: 0.3s;
@@ -221,4 +224,27 @@ display: none!important;
 }
 .hover3 .h5{
     transition: 0.3s;
+}
+/* profile edit */
+/* remove input field arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* form  */
+/* input border colors */
+.custom-input-border-color,.custom-input-border-color:focus{
+    border-color: #00d084;
+}
+
+/* custom buttons */
+/* success */
+.custom-success-button{
+    background-color: #00d084;
+    border-color: #00d084;
+}
+.custom-success-button:hover{
+    background-color: #008d59;
+    border-color: #008d59;
 }
