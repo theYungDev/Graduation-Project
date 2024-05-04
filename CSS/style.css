@@ -178,6 +178,12 @@
 }
 
 /* dashboard */
+.btn-primary:hover{
+background-color: #00d084!important;
+}
+.btn-primary:active{
+background-color: #00d084!important;
+}
 /* side panel */
 .list-group-item-action{
     color: white;
@@ -193,6 +199,13 @@
     background-color: transparent;
     color: white;
 }
+/* side panel hide content */
+.list-group-item-action.active .panel-item-hide{
+display: block!important;
+}
+.list-group-item-action .panel-item-hide{
+display: none!important;
+}
 /* hover courses */
 .hover3{
     transition: 0.3s;
@@ -201,8 +214,11 @@
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
     transition: 0.3s;
 }
-.hover3 .h5:hover{
+.hover3:hover .h5{
     color: #00d084;
-    font-size: 22px;
+    font-size: 22px!important;
+    transition: 0.3s;
+}
+.hover3 .h5{
     transition: 0.3s;
 }

@@ -13,7 +13,7 @@
     <div class="container-fluid h-100">
       <div class="row h-100">
         <!-- panel buttons -->
-        <div class="col-lg-2 px-0 h-100 bg-darkblue">
+        <div class="col-lg-2 px-0 h-100 bg-darkblue h-100">
           <!-- logo -->
           <div class="py-5 px-2">
             <a class="object-fit-contain" href="index.html">
@@ -91,10 +91,10 @@
           </div>
         </div>
         <!-- dashboard panel information -->
-        <div class="col-lg-10" style="background-color: #f3f4f6">
-          <div class="container py-5">
+        <div class="col-lg-10 h-100" style="background-color: #f3f4f6">
+          <div class="container">
             <!-- account photo+info -->
-            <div class="d-flex flex-row mb-">
+            <div class="d-flex flex-row pt-3">
               <!-- img -->
               <div
                 class="rounded-circle"
@@ -111,14 +111,66 @@
                 <span class="fw-semibold fs-6">Omar Essam</span>
                 <span class="txt-green">#C12400</span>
               </div>
+              <!-- info modal -->
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary border-0 p-1 bg-green"
+                style="height: 36px; width: 36px"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                <img src="Assets/images/45.png" alt="" />
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="staticBackdrop"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                        Modal title
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">...</div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Understood
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Vertically centered modal -->
             </div>
             <!-- content panel buttons -->
             <div
-              class="tab-conten my-5 bg-white rounded-3 py-4 px-3"
+              class="tab-content my-5 bg-white rounded-3 py-4 px-3"
               id="nav-tabContent"
             >
               <div
-                class="tab-pane fade show active"
+                class="tab-pane fade show active panel-item-hide"
                 id="list-home"
                 role="tabpanel"
                 aria-labelledby="list-home-list"
@@ -162,12 +214,12 @@
                         class="text-white d-flex flex-column position-absolute"
                         style="bottom: 20px; left: 10px"
                       >
-                        <span class="fs-5 fw-bold">Computer Network</span>
+                        <span class="fs-5 fw-bold h5">Computer Network</span>
                         <span class="fs-6 txt-gray">#Course Code</span>
                       </div>
                     </div>
                     <div
-                      class="rounded-4 position-relative m-2"
+                      class="rounded-4 position-relative m-2 hover3"
                       style="
                         width: 260px;
                         height: 250px;
@@ -180,12 +232,12 @@
                         class="text-white d-flex flex-column position-absolute"
                         style="bottom: 20px; left: 10px"
                       >
-                        <span class="fs-5 fw-bold">Software</span>
+                        <span class="fs-5 fw-bold h5">Software</span>
                         <span class="fs-6 txt-gray">#Course Code</span>
                       </div>
                     </div>
                     <div
-                      class="rounded-4 position-relative m-2"
+                      class="rounded-4 position-relative m-2 hover3"
                       style="
                         width: 260px;
                         height: 250px;
@@ -198,14 +250,14 @@
                         class="text-white d-flex flex-column position-absolute"
                         style="bottom: 20px; left: 10px"
                       >
-                        <span class="fs-5 fw-bold"
+                        <span class="fs-5 fw-bold h5"
                           >Artificial Intelligence</span
                         >
                         <span class="fs-6 txt-gray">#Course Code</span>
                       </div>
                     </div>
                     <div
-                      class="rounded-4 position-relative m-2"
+                      class="rounded-4 position-relative m-2 hover3"
                       style="
                         width: 260px;
                         height: 250px;
@@ -218,7 +270,7 @@
                         class="text-white d-flex flex-column position-absolute"
                         style="bottom: 20px; left: 10px"
                       >
-                        <span class="fs-5 fw-bold">Design</span>
+                        <span class="fs-5 fw-bold h5">Design</span>
                         <span class="fs-6 txt-gray">#Course Code</span>
                       </div>
                     </div>
