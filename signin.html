@@ -9,7 +9,7 @@
     <script defer src="script/bootstrap.bundle.min.js"></script>
     <script defer src="script/signin.js"></script>
   </head>
-  <body>
+  <body class="vh-100">
     <!-- navbar -->
     <nav
       class="navbar navbar-expand-lg bg-body-tertiary position-sticky top-0 z-1"
@@ -95,11 +95,13 @@
     <div class="container-fluid h-100">
       <div class="row h-100">
         <div class="col-lg-4 px-0 bg-table h-100">
-          <div class="h-75 mx-auto py-5" style="width: 85%">
-            <div class="fw-bold fs-3 my-3" style="color: #1e1e1e">Sign in</div>
+          <div class=" mx-auto pt-5" style="width: 85%">
+            <!-- form -->
+            <form class="position-relative z-0 w-75 my-3">
+            <div class="fw-bold fs-3 pb-3" style="color: #1e1e1e">Sign in</div>
             <!-- account type selector -->
             <div
-              class="py-1 px-1 my-3 rounded-pill d-flex"
+              class="py-1 px-1 mt-3 rounded-pill d-flex"
               style="border: 3px solid #192f59"
             >
               <button
@@ -119,11 +121,10 @@
                 Staff
               </button>
             </div>
-            <!-- form -->
-            <form class="position-relative z-0 w-75 my-3">
+            
               <select
                 id="frmslct"
-                class="form-select my-1 pb-3 px-0 pt-0 border-0 rounded-0 txt-gray fw-bold"
+                class="form-select my-1 pb-3 px-0 pt-3 border-0 rounded-0 txt-gray fw-bold"
                 style="
                   border-bottom: 1px solid black !important;
                   visibility: hidden;
@@ -176,13 +177,13 @@
           </div>
           <!-- footer -->
           <footer
-            class="h-25"
+            class="`"
             style="
               background-image: url(Assets/images/Vector.png);
               background-color: #192f59;
             "
           >
-            <div class="container h-25">
+            <div class="container">
               <div class="row">
                 <!-- logo -->
                 <div class="m-3 w-50 h-50">
@@ -258,7 +259,7 @@
         </div>
 
         <!-- carousel -->
-        <div class="col-lg-8 px-0">
+        <div class="col-lg-8 px-0 h-100">
           <div
             id="carouselExampleDark"
             class="carousel carousel-dark slide h-100"
