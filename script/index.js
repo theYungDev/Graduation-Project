@@ -28,7 +28,6 @@ var numDivs = document.querySelectorAll('.number');
         }, { threshold: [0] });
 
         numDivs.forEach(numDiv => observer.observe(numDiv));
-
         function animateValue(obj, start, end, duration) {
             let startTimestamp = null;
             const step = (timestamp) => {
