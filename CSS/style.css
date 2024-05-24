@@ -67,6 +67,14 @@
 
 /*-----shortcuts------*/
 
+/* numbers counter animation */
+.number {
+    font-size: 50px;
+    transition: font-size 1s;
+}
+.animate {
+    font-size: 50px;
+}
 /* adjusting carousel */
 .c-item{
     height: 600px;

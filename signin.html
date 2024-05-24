@@ -9,7 +9,6 @@
     <script defer src="script/bootstrap.bundle.min.js"></script>
     <script defer src="script/signin.js"></script>
   </head>
-
   <body>
     <!-- navbar -->
     <nav
@@ -93,38 +92,41 @@
       </div>
     </nav>
     <!-- signin form -->
-    <div class="container-fluid h-100">
-      <div class="row h-100">
-        <div class="col-lg-4 px-0 bg-table h-100">
-          <div class="h-75 mx-auto py-5" style="width: 85%">
-            <div class="fw-bold fs-3 my-3" style="color: #1e1e1e">Sign in</div>
-            <!-- account type selector -->
-            <div
-              class="py-1 px-1 my-3 rounded-pill d-flex"
-              style="border: 3px solid #192f59"
-            >
-              <button
-                type="button"
-                id="mybtn1"
-                class="bg-green txt-darkblue w-50 py-1 px-2 fs-4 fw-semibold border-0 rounded-pill"
-                style="color: white"
-              >
-                Student
-              </button>
-              <button
-                type="button"
-                id="mybtn2"
-                class="txt-darkblue w-50 py-1 fs-4 fw-semibold border-0 rounded-pill"
-                style="background-color: transparent"
-              >
-                Staff
-              </button>
-            </div>
+    <div class="container-fluid d-flex flex-column" style="min-height: 100vh">
+      <div class="row flex-grow-1">
+        <div class="col-lg-4 px-0 bg-table vh-100 d-flex flex-column">
+          <div class="mx-auto pt-5 h-100" style="width: 85%">
             <!-- form -->
             <form class="position-relative z-0 w-75 my-3">
+              <div class="fw-bold fs-3 pb-3" style="color: #1e1e1e">
+                Sign in
+              </div>
+              <!-- account type selector -->
+              <div
+                class="py-1 px-1 mt-3 rounded-pill d-flex"
+                style="border: 3px solid #192f59"
+              >
+                <button
+                  type="button"
+                  id="mybtn1"
+                  class="bg-green txt-darkblue w-50 py-1 px-2 fs-4 fw-semibold border-0 rounded-pill"
+                  style="color: white"
+                >
+                  Student
+                </button>
+                <button
+                  type="button"
+                  id="mybtn2"
+                  class="txt-darkblue w-50 py-1 fs-4 fw-semibold border-0 rounded-pill"
+                  style="background-color: transparent"
+                >
+                  Staff
+                </button>
+              </div>
+
               <select
                 id="frmslct"
-                class="form-select my-1 pb-3 px-0 pt-0 border-0 rounded-0 txt-gray fw-bold"
+                class="form-select my-1 pb-3 px-0 pt-3 border-0 rounded-0 txt-gray fw-bold"
                 style="
                   border-bottom: 1px solid black !important;
                   visibility: hidden;
@@ -176,14 +178,14 @@
             </form>
           </div>
           <!-- footer -->
-          <footer
-            class="h-25"
+          <div
+            class=""
             style="
               background-image: url(Assets/images/Vector.png);
               background-color: #192f59;
             "
           >
-            <div class="container h-25">
+            <div class="container">
               <div class="row">
                 <!-- logo -->
                 <div class="m-3 w-50 h-50">
@@ -255,14 +257,14 @@
                 </div>
               </div>
             </div>
-          </footer>
+          </div>
         </div>
 
         <!-- carousel -->
-        <div class="col-lg-8 px-0">
+        <div class="col-lg-8 px-0 h-100 d-flex flex-column">
           <div
             id="carouselExampleDark"
-            class="carousel carousel-dark slide h-100"
+            class="carousel carousel-dark slide"
             data-bs-ride="carousel"
           >
             <!-- indicators -->
@@ -290,7 +292,7 @@
               ></button>
             </div>
             <!-- items -->
-            <div class="carousel-inner h-100">
+            <div class="carousel-inner vh-100">
               <div
                 class="carousel-item active h-100 w-100"
                 data-bs-interval="4000"
@@ -336,7 +338,10 @@
                   class="carousel-caption d-none d-md-block position-absolute p-5 m-3 text-start"
                   style="top: 0px; left: 0px"
                 >
-                  <h1 class="txt-darkblue fw-bold w-50">
+                  <h1
+                    class="txt-darkblue fw-bold w-50"
+                    style="font-size: 55.62px"
+                  >
                     A community that helps you learn
                   </h1>
                   <p class="text-white fs-5 w-75">
@@ -360,7 +365,10 @@
                   class="carousel-caption d-none d-md-block position-absolute p-5 m-3 text-start"
                   style="top: 0px; left: 0px"
                 >
-                  <h1 class="txt-darkblue fw-bold w-50">
+                  <h1
+                    class="txt-darkblue fw-bold w-50"
+                    style="font-size: 55.62px"
+                  >
                     Huge library and more books
                   </h1>
                   <p class="text-white fs-5 w-75">

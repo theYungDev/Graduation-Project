@@ -12,3 +12,31 @@ for (let index = 0; index < 4; index++) {
     card2[index].style.display = "none";
   });
 }
+// counter animation
+var numDivs = document.querySelectorAll('.number');
+        var endValues = [22, 2000, 4, 40]; // The end values for each number
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if(entry.isIntersecting === true) {
+                    entry.target.classList.add('animate');
+                    var index = Array.from(numDivs).indexOf(entry.target);
+                    animateValue(entry.target, 0, endValues[index], 2000); // animate from 0 to endValues[index] in 2 seconds
+                } else {
+                    entry.target.classList.remove('animate');
+                }
+            });
+        }, { threshold: [0] });
+
+        numDivs.forEach(numDiv => observer.observe(numDiv));
+        function animateValue(obj, start, end, duration) {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                obj.innerHTML = Math.floor(progress * (end - start) + start);
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
