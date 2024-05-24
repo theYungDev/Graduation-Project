@@ -96,8 +96,8 @@
       <div class="row flex-grow-1">
         <div class="col-lg-4 px-0 bg-table vh-100 d-flex flex-column">
           <div class="mx-auto pt-5 h-100" style="width: 85%">
-            <!-- form -->
-            <form class="position-relative z-0 w-75 my-3">
+            
+            <div class="w-75">
               <div class="fw-bold fs-3 pb-3" style="color: #1e1e1e">
                 Sign in
               </div>
@@ -123,9 +123,9 @@
                   Staff
                 </button>
               </div>
-
               <select
-                id="frmslct"
+                id="frmSlct"
+                onchange="accountTypeChanger()"
                 class="form-select my-1 pb-3 px-0 pt-3 border-0 rounded-0 txt-gray fw-bold"
                 style="
                   border-bottom: 1px solid black !important;
@@ -134,10 +134,14 @@
                 aria-label="Default select example"
               >
                 <option selected>Type of the account</option>
-                <option value="1">Doctor</option>
-                <option value="2">Admin</option>
-                <option value="3">Accountant</option>
+                <option value="doctor-form" >Doctor</option>
+                <option value="admin-form" >Admin</option>
+                <option value="accountant-form" >Accountant</option>
               </select>
+            </div>
+            <!-- student (default) form -->
+            <form class="position-relative z-0 w-75 my-3" id="student-form">
+              <!--form Data  -->
               <div
                 class="form-floating mb-3"
                 style="border-bottom: 1px solid black !important"
@@ -168,7 +172,130 @@
                   >Password</label
                 >
               </div>
-
+              <!--  -->
+              <button
+                type="submit"
+                class="bg-green text-white border-0 fw-bold fs-6 w-50 py-3 mt-lg-3 rounded-4"
+              >
+                Sign in
+              </button>
+            </form>
+            <!-- Doctor form -->
+            <form class="position-relative z-0 w-75 my-3" id="doctor-form" style="display: none;">
+              <!--form Data  -->
+              <div
+                class="form-floating mb-3"
+                style="border-bottom: 1px solid black !important"
+              >
+                <input
+                  type="email"
+                  class="form-control border-0"
+                  style="background-color: inherit"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label class="fw-bold txt-gray" for="floatingInput"
+                  >Email address</label
+                >
+              </div>
+              <div
+                class="form-floating mb-3"
+                style="border-bottom: 1px solid black !important"
+              >
+                <input
+                  type="name"
+                  class="form-control border-0"
+                  style="background-color: inherit"
+                  id="floatingName"
+                  placeholder="Namee"
+                />
+                <label class="fw-bold txt-gray" for="floatingName"
+                  >Password</label
+                >
+              </div>
+              <!--  -->
+              <button
+                type="submit"
+                class="bg-green text-white border-0 fw-bold fs-6 w-50 py-3 mt-lg-3 rounded-4"
+              >
+                Sign in
+              </button>
+            </form>
+            <!-- Admin form -->
+            <form class="position-relative z-0 w-75 my-3" id="admin-form" style="display: none;">
+              <!--form Data  -->
+              <div
+                class="form-floating mb-3"
+                style="border-bottom: 1px solid black !important"
+              >
+                <input
+                  type="email"
+                  class="form-control border-0"
+                  style="background-color: inherit"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label class="fw-bold txt-gray" for="floatingInput"
+                  >Email address</label
+                >
+              </div>
+              <div
+                class="form-floating mb-3"
+                style="border-bottom: 1px solid black !important"
+              >
+                <input
+                  type="name"
+                  class="form-control border-0"
+                  style="background-color: inherit"
+                  id="floatingName"
+                  placeholder="Namee"
+                />
+                <label class="fw-bold txt-gray" for="floatingName"
+                  >Password</label
+                >
+              </div>
+              <!--  -->
+              <button
+                type="submit"
+                class="bg-green text-white border-0 fw-bold fs-6 w-50 py-3 mt-lg-3 rounded-4"
+              >
+                Sign in
+              </button>
+            </form>
+            <!-- Accountant form -->
+            <form class="position-relative z-0 w-75 my-3" id="accountant-form" style="display: none;">
+              <!--form Data  -->
+              <div
+                class="form-floating mb-3"
+                style="border-bottom: 1px solid black !important"
+              >
+                <input
+                  type="email"
+                  class="form-control border-0"
+                  style="background-color: inherit"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label class="fw-bold txt-gray" for="floatingInput"
+                  >Email address</label
+                >
+              </div>
+              <div
+                class="form-floating mb-3"
+                style="border-bottom: 1px solid black !important"
+              >
+                <input
+                  type="name"
+                  class="form-control border-0"
+                  style="background-color: inherit"
+                  id="floatingName"
+                  placeholder="Namee"
+                />
+                <label class="fw-bold txt-gray" for="floatingName"
+                  >Password</label
+                >
+              </div>
+              <!--  -->
               <button
                 type="submit"
                 class="bg-green text-white border-0 fw-bold fs-6 w-50 py-3 mt-lg-3 rounded-4"
