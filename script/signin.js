@@ -13,7 +13,7 @@ myBtn1.onclick = () => {
   myBtn1.style.color = "#ffffff";
   myBtn2.style.color = "#192F59";
   myBtn2.style.backgroundColor = "transparent";
-  formSelect.style.visibility = "hidden";
+  formSelect.style.display = "none";
   // show student form
   studentForm.style.display = "block";
   // hide other forms
@@ -27,7 +27,7 @@ myBtn2.onclick = () => {
   myBtn1.style.backgroundColor = "transparent";
   myBtn2.style.color = "#ffffff";
   myBtn1.style.color = "#192F59";
-  formSelect.style.visibility = "visible";
+  formSelect.style.display = "block";
   // hide student form
   studentForm.style.display = "none";
   // show doctor form (default)

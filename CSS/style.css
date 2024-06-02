@@ -29,6 +29,9 @@
 .bg-color1{
     background-color: #192F59;
 }
+.show{
+    display: block;
+}
 .carousel-custom-indicators [data-bs-target] {
     background-color: #D9D9D9!important;
     height: 10.93px!important;
@@ -257,4 +260,9 @@ input::-webkit-inner-spin-button {
 .custom-success-button:hover{
     background-color: #008d59;
     border-color: #008d59;
+}
+
+#srch-field{
+    border-color: #00D0844D;
+    background-color: #EBFCF6;
 }

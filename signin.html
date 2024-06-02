@@ -6,12 +6,15 @@
     <title>Smart Academy</title>
     <link rel="stylesheet" href="CSS/bootstrap.min.css" />
     <link rel="stylesheet" href="CSS/style.css" />
+    <script defer src="script/navbar.js"></script>
     <script defer src="script/bootstrap.bundle.min.js"></script>
     <script defer src="script/signin.js"></script>
   </head>
   <body class="vh-100">
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary z-1">
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary d-flex flex-column position-relative z-1"
+    >
       <div class="container-fluid">
         <a class="navbar-brand ms-4" href="#"
           ><img
@@ -61,20 +64,19 @@
                 >Contact us</a
               >
             </li>
+            <!-- search button -->
             <li class="nav-item">
-              <button type="button" class="btn">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-search"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
-                  ></path>
-                </svg>
+              <button
+                class="border-0 p-1"
+                style="background-color: inherit"
+                id="srch-btn"
+              >
+                <img
+                  id="srch-img"
+                  style="height: 30px; width: 30px"
+                  src="Assets/images/51.png"
+                  alt=""
+                />
               </button>
             </li>
           </ul>
@@ -88,7 +90,25 @@
           </button>
         </div>
       </div>
+      <div
+        id="srch-toggler"
+        class="position-absolute d-flex justify-content-center bg-body- collapse d-none"
+        style="height: 50px; width: 100%; top: 76px; background-color: inherit"
+      >
+        <div class="">
+          <input
+            type="text"
+            id="srch-field"
+            class="form-control me-5"
+            style="width: 420px"
+            placeholder="Search"
+            aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-default"
+          />
+        </div>
+      </div>
     </nav>
+
     <!-- signin form -->
     <div class="container-fluid d-flex flex-column" style="height: 717.35px">
       <div class="row flex-grow-1">
@@ -124,10 +144,7 @@
                 id="frmSlct"
                 onchange="accountTypeChanger()"
                 class="form-select my-1 pb-3 px-0 pt-3 border-0 rounded-0 txt-gray fw-bold"
-                style="
-                  border-bottom: 1px solid black !important;
-                  visibility: hidden;
-                "
+                style="border-bottom: 1px solid black !important; display: none"
                 aria-label="Default select example"
               >
                 <option selected>type of account</option>

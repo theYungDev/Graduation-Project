@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="CSS/style.css" />
     <script defer src="script/bootstrap.bundle.min.js"></script>
     <script defer src="script/index.js"></script>
+    <script defer src="script/navbar.js"></script>
   </head>
   <body>
     <!-- navbar -->
     <nav
-      class="navbar navbar-expand-lg bg-body-tertiary position-sticky top-0 z-1"
+      class="navbar navbar-expand-lg bg-body-tertiary d-flex flex-column position-relative z-1"
     >
       <div class="container-fluid">
         <a class="navbar-brand ms-4" href="#"
@@ -36,10 +37,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0 fs-5">
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="index.html"
+              <a class="nav-link active" aria-current="page" href="index.html"
                 >Home</a
               >
             </li>
@@ -54,8 +52,11 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active"
-              style="color: #00d084" aria-current="page" href="events.html"
+              <a
+                class="nav-link active"
+                style="color: #00d084"
+                aria-current="page"
+                href="events.html"
                 >Events</a
               >
             </li>
@@ -67,28 +68,47 @@
                 >Contact us</a
               >
             </li>
+            <!-- search button -->
             <li class="nav-item">
-              <button type="button" class="btn">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-search"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
-                  ></path>
-                </svg>
+              <button
+                class="border-0 p-1"
+                style="background-color: inherit"
+                id="srch-btn"
+              >
+                <img
+                  id="srch-img"
+                  style="height: 30px; width: 30px"
+                  src="Assets/images/51.png"
+                  alt=""
+                />
               </button>
             </li>
           </ul>
 
-          <a href="signin.html">
-          <button class="button fs-5 mx-5 px-5 py-1" type="submit">
+          <button
+            class="button fs-5 mx-5 px-5 py-1"
+            onclick="location.href='signin.html'"
+            type="submit"
+          >
             Sign in
-          </button></a>
+          </button>
+        </div>
+      </div>
+      <div
+        id="srch-toggler"
+        class="position-absolute d-flex justify-content-center bg-body- collapse d-none"
+        style="height: 50px; width: 100%; top: 76px; background-color: inherit"
+      >
+        <div class="">
+          <input
+            type="text"
+            id="srch-field"
+            class="form-control me-5"
+            style="width: 420px"
+            placeholder="Search"
+            aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-default"
+          />
         </div>
       </div>
     </nav>
@@ -125,182 +145,185 @@
       </div>
       <!-- Event cards -->
       <div class="row">
-        
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <!-- image -->
-        <div
-          class="rounded-4 position-relative w-100"
-          style="
-            width: 410px;
-            height: 410px;
-            background-image: url(Assets/images/24.jpg);
-            background-position: center;
-            background-size: cover;
-          "
-        >
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <!-- image -->
           <div
-            class="text-white text-center fs-4 px-2 py-4 position-absolute bottom-0"
+            class="rounded-4 position-relative w-100"
             style="
-              background-color: #00d084;
-              width: fit-content;
-              height: fit-content;
-              border-bottom-left-radius: inherit;
+              width: 410px;
+              height: 410px;
+              background-image: url(Assets/images/24.jpg);
+              background-position: center;
+              background-size: cover;
             "
           >
-            13 <br />
-            JUN <br />
-            2023
+            <div
+              class="text-white text-center fs-4 px-2 py-4 position-absolute bottom-0"
+              style="
+                background-color: #00d084;
+                width: fit-content;
+                height: fit-content;
+                border-bottom-left-radius: inherit;
+              "
+            >
+              13 <br />
+              JUN <br />
+              2023
+            </div>
+          </div>
+          <!-- info -->
+          <div class="">
+            <span class="fs-2 txt-green"> Technology Event</span>
+            <p class="fs-5 fw-bold txt-darkblue w-100">
+              Lectures on technology, its development and its impact on modern
+              society, and talk about the development of artificial intelligence
+            </p>
           </div>
         </div>
-        <!-- info -->
-        <div class="">
-          <span class="fs-2 txt-green"> Technology Event</span>
-          <p class="fs-5 fw-bold txt-darkblue w-100 ">
-            Lectures on technology, its development and its impact on modern
-            society, and talk about the development of artificial intelligence
-          </p>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <!-- image -->
-        <div
-          class="rounded-4 position-relative w-100"
-          style="
-            width: 410px;
-            height: 410px;
-            background-image: url(Assets/images/25.jpg);
-            background-position: center;
-            background-size: cover;
-          "
-        >
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <!-- image -->
           <div
-            class="text-white text-center fs-4 px-2 py-4 position-absolute bottom-0"
+            class="rounded-4 position-relative w-100"
             style="
-              background-color: #00d084;
-              width: fit-content;
-              height: fit-content;
-              border-bottom-left-radius: inherit;
+              width: 410px;
+              height: 410px;
+              background-image: url(Assets/images/25.jpg);
+              background-position: center;
+              background-size: cover;
             "
           >
-            23 <br />
-            JUN <br />
-            2023
+            <div
+              class="text-white text-center fs-4 px-2 py-4 position-absolute bottom-0"
+              style="
+                background-color: #00d084;
+                width: fit-content;
+                height: fit-content;
+                border-bottom-left-radius: inherit;
+              "
+            >
+              23 <br />
+              JUN <br />
+              2023
+            </div>
+          </div>
+          <!-- info -->
+          <div class="">
+            <span class="fs-2 txt-green"> Free Palestine</span>
+            <p class="fs-5 fw-bold txt-darkblue w-100">
+              Gatherings to stop what is happening in Palestine and support the
+              Palestinian cause
+              <br />
+              <span class="txt-gray">
+                #Palestine will remain a free Arab state</span
+              >
+            </p>
           </div>
         </div>
-        <!-- info -->
-        <div class="">
-          <span class="fs-2 txt-green"> Free Palestine</span>
-          <p class="fs-5 fw-bold txt-darkblue w-100 ">
-            Gatherings to stop what is happening in Palestine and support the Palestinian cause
-            <br> <span class="txt-gray">
-#Palestine will remain a free Arab state</span>
-          </p>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <!-- image -->
-        <div
-          class="rounded-4 position-relative w-100"
-          style="
-            width: 410px;
-            height: 410px;
-            background-image: url(Assets/images/26.jpg);
-            background-position: center;
-            background-size: cover;
-          "
-        >
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <!-- image -->
           <div
-            class="text-white text-center fs-4 px-2 py-4 position-absolute bottom-0"
+            class="rounded-4 position-relative w-100"
             style="
-              background-color: #00d084;
-              width: fit-content;
-              height: fit-content;
-              border-bottom-left-radius: inherit;
+              width: 410px;
+              height: 410px;
+              background-image: url(Assets/images/26.jpg);
+              background-position: center;
+              background-size: cover;
             "
           >
-            30 <br />
-            JUN <br />
-            2023
+            <div
+              class="text-white text-center fs-4 px-2 py-4 position-absolute bottom-0"
+              style="
+                background-color: #00d084;
+                width: fit-content;
+                height: fit-content;
+                border-bottom-left-radius: inherit;
+              "
+            >
+              30 <br />
+              JUN <br />
+              2023
+            </div>
+          </div>
+          <!-- info -->
+          <div class="">
+            <span class="fs-2 txt-green"> Musical party</span>
+            <p class="fs-5 fw-bold txt-darkblue w-100">
+              A music party to entertain students and enjoy some great music
+              with your friends at the university With various musical bands
+            </p>
           </div>
         </div>
-        <!-- info -->
-        <div class="">
-          <span class="fs-2 txt-green"> Musical party</span>
-          <p class="fs-5 fw-bold txt-darkblue w-100 ">
-            A music party to entertain students and enjoy some great music with your friends at the university With various musical bands
-          </p>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <!-- image -->
-        <div
-          class="rounded-4 position-relative w-100"
-          style="
-            width: 410px;
-            height: 410px;
-            background-image: url(Assets/images/23.jpg);
-            background-position: center;
-            background-size: cover;
-          "
-        >
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <!-- image -->
           <div
-            class="text-white text-center fs-4 px-2 py-4 position-absolute bottom-0"
+            class="rounded-4 position-relative w-100"
             style="
-              background-color: #00d084;
-              width: fit-content;
-              height: fit-content;
-              border-bottom-left-radius: inherit;
+              width: 410px;
+              height: 410px;
+              background-image: url(Assets/images/23.jpg);
+              background-position: center;
+              background-size: cover;
             "
           >
-            13 <br />
-            JUN <br />
-            2023
+            <div
+              class="text-white text-center fs-4 px-2 py-4 position-absolute bottom-0"
+              style="
+                background-color: #00d084;
+                width: fit-content;
+                height: fit-content;
+                border-bottom-left-radius: inherit;
+              "
+            >
+              13 <br />
+              JUN <br />
+              2023
+            </div>
+          </div>
+          <!-- info -->
+          <div class="">
+            <span class="fs-2 txt-green"> Discipline Summer</span>
+            <p class="fs-5 fw-bold txt-darkblue w-100">
+              We offer the most complete house renovating services in the
+              country, from kitchen design to bathroom remodeling
+            </p>
           </div>
         </div>
-        <!-- info -->
-        <div class="">
-          <span class="fs-2 txt-green"> Discipline Summer</span>
-          <p class="fs-5 fw-bold txt-darkblue w-100 ">
-            We offer the most complete house renovating services in the country, from kitchen design to bathroom remodeling
-          </p>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <!-- image -->
-        <div
-          class="rounded-4 position-relative w-100"
-          style="
-            width: 410px;
-            height: 410px;
-            background-image: url(Assets/images/31.jpg);
-            background-position: center;
-            background-size: cover;
-          "
-        >
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <!-- image -->
           <div
-            class="text-white text-center fs-4 px-2 py-4 position-absolute bottom-0"
+            class="rounded-4 position-relative w-100"
             style="
-              background-color: #00d084;
-              width: fit-content;
-              height: fit-content;
-              border-bottom-left-radius: inherit;
+              width: 410px;
+              height: 410px;
+              background-image: url(Assets/images/31.jpg);
+              background-position: center;
+              background-size: cover;
             "
           >
-            13 <br />
-            JUN <br />
-            2023
+            <div
+              class="text-white text-center fs-4 px-2 py-4 position-absolute bottom-0"
+              style="
+                background-color: #00d084;
+                width: fit-content;
+                height: fit-content;
+                border-bottom-left-radius: inherit;
+              "
+            >
+              13 <br />
+              JUN <br />
+              2023
+            </div>
+          </div>
+          <!-- info -->
+          <div class="">
+            <span class="fs-2 txt-green"> Technology Event</span>
+            <p class="fs-5 fw-bold txt-darkblue w-100">
+              Lectures on technology, its development and its impact on modern
+              society, and talk about the development of artificial intelligence
+            </p>
           </div>
         </div>
-        <!-- info -->
-        <div class="">
-          <span class="fs-2 txt-green"> Technology Event</span>
-          <p class="fs-5 fw-bold txt-darkblue w-100 ">
-            Lectures on technology, its development and its impact on modern
-            society, and talk about the development of artificial intelligence
-          </p>
-        </div>
-      </div>
-
       </div>
     </div>
     <!-- footer -->

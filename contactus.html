@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="CSS/style.css" />
     <script defer src="script/bootstrap.bundle.min.js"></script>
     <script defer src="script/contactus.js"></script>
+    <script defer src="script/navbar.js"></script>
   </head>
   <body>
     <!-- navbar -->
     <nav
-      class="navbar navbar-expand-lg bg-body-tertiary position-sticky top-0 z-1"
+      class="navbar navbar-expand-lg bg-body-tertiary d-flex flex-column position-relative z-1"
     >
       <div class="container-fluid">
         <a class="navbar-brand ms-4" href="#"
@@ -36,10 +37,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0 fs-5">
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="index.html"
+              <a class="nav-link active" aria-current="page" href="index.html"
                 >Home</a
               >
             </li>
@@ -67,28 +65,47 @@
                 >Contact us</a
               >
             </li>
+            <!-- search button -->
             <li class="nav-item">
-              <button type="button" class="btn">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-search"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
-                  ></path>
-                </svg>
+              <button
+                class="border-0 p-1"
+                style="background-color: inherit"
+                id="srch-btn"
+              >
+                <img
+                  id="srch-img"
+                  style="height: 30px; width: 30px"
+                  src="Assets/images/51.png"
+                  alt=""
+                />
               </button>
             </li>
           </ul>
 
-          <a href="signin.html">
-          <button class="button fs-5 mx-5 px-5 py-1" type="submit">
+          <button
+            class="button fs-5 mx-5 px-5 py-1"
+            onclick="location.href='signin.html'"
+            type="submit"
+          >
             Sign in
-          </button></a>
+          </button>
+        </div>
+      </div>
+      <div
+        id="srch-toggler"
+        class="position-absolute d-flex justify-content-center bg-body- collapse d-none"
+        style="height: 50px; width: 100%; top: 76px; background-color: inherit"
+      >
+        <div class="">
+          <input
+            type="text"
+            id="srch-field"
+            class="form-control me-5"
+            style="width: 420px"
+            placeholder="Search"
+            aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-default"
+          />
         </div>
       </div>
     </nav>
@@ -119,7 +136,7 @@
       </div>
     </div>
     <!-- send a message -->
-    <div class="container py-5 ">
+    <div class="container py-5">
       <!-- form -->
       <div class="row">
         <div class="mx-auto text-center fw-bold fs-3 txt-darkblue">
@@ -135,11 +152,86 @@
         "
       >
         <div class="row position-relative">
-      <!-- socials buttons -->
-      <button class="bg-green border-0 position-absolute " id="main-button" style="height:80px ;width: 90px; left: -308px; top: -40px;border-top-right-radius: 36px; border-bottom-right-radius: 36px; ">  <img class="h-50 my-3 mx-2" style="height: 43px;width: 43px; "  src="Assets/images/47.png" alt=""></button>
-      <a href="https://www.facebook.com/CIS.EDU1" target="_blank" class="bg-green border-0 position-absolute hidden-buttons" style="height:80px ;width: 90px; left: -308px; top: 60px;border-top-right-radius: 36px; border-bottom-right-radius: 36px; display: none;">  <img class="h-50 my-3 mx-2" style="height: 43px;width: 43px; "  src="Assets/images/48.png" alt=""></a>
-      <a href="https://www.youtube.com/channel/UCoRUJ2St0Bx7WjKdbTqOvkQ" target="_blank" class="bg-green border-0 position-absolute hidden-buttons" style="height:80px ;width: 90px; left: -308px; top: 160px;border-top-right-radius: 36px; border-bottom-right-radius: 36px; display: none;">  <img class="h-50 my-3 mx-2" style="height: 43px;width: 43px; "  src="Assets/images/49.png" alt=""></a>
-      <a href="https://www.linkedin.com/school/new-cairo-academy-nca/" target="_blank" class="bg-green border-0 position-absolute hidden-buttons" style="height:80px ;width: 90px; left: -308px; top: 260px;border-top-right-radius: 36px; border-bottom-right-radius: 36px; display: none;">  <img class="h-50 my-3 mx-2" style="height: 43px;width: 43px; "  src="Assets/images/50.png" alt=""></a>
+          <!-- socials buttons -->
+          <button
+            class="bg-green border-0 position-absolute"
+            id="main-button"
+            style="
+              height: 80px;
+              width: 90px;
+              left: -308px;
+              top: -40px;
+              border-top-right-radius: 36px;
+              border-bottom-right-radius: 36px;
+            "
+          >
+            <img
+              class="h-50 my-3 mx-2"
+              style="height: 43px; width: 43px"
+              src="Assets/images/47.png"
+              alt=""
+            />
+          </button>
+          <a
+            href="https://www.facebook.com/CIS.EDU1"
+            target="_blank"
+            class="bg-green border-0 position-absolute hidden-buttons"
+            style="
+              height: 80px;
+              width: 90px;
+              left: -308px;
+              top: 60px;
+              border-top-right-radius: 36px;
+              border-bottom-right-radius: 36px;
+              display: none;
+            "
+          >
+            <img
+              class="h-50 my-3 mx-2"
+              style="height: 43px; width: 43px"
+              src="Assets/images/48.png"
+              alt=""
+          /></a>
+          <a
+            href="https://www.youtube.com/channel/UCoRUJ2St0Bx7WjKdbTqOvkQ"
+            target="_blank"
+            class="bg-green border-0 position-absolute hidden-buttons"
+            style="
+              height: 80px;
+              width: 90px;
+              left: -308px;
+              top: 160px;
+              border-top-right-radius: 36px;
+              border-bottom-right-radius: 36px;
+              display: none;
+            "
+          >
+            <img
+              class="h-50 my-3 mx-2"
+              style="height: 43px; width: 43px"
+              src="Assets/images/49.png"
+              alt=""
+          /></a>
+          <a
+            href="https://www.linkedin.com/school/new-cairo-academy-nca/"
+            target="_blank"
+            class="bg-green border-0 position-absolute hidden-buttons"
+            style="
+              height: 80px;
+              width: 90px;
+              left: -308px;
+              top: 260px;
+              border-top-right-radius: 36px;
+              border-bottom-right-radius: 36px;
+              display: none;
+            "
+          >
+            <img
+              class="h-50 my-3 mx-2"
+              style="height: 43px; width: 43px"
+              src="Assets/images/50.png"
+              alt=""
+          /></a>
           <!-- form -->
           <div class="col-lg-8 col-sm-12 mb-sm-2 mb-lg-0 pe-lg-5">
             <form class="position-relative z-0">
@@ -218,27 +310,26 @@
           Our Location
         </div>
       </div>
-        <div class="row mb-5">
-          <div class="col-12">
-            <!-- google maps location -->
-            <div class="card p-0 my-2 border-0 rounded-4">
-              <iframe
-                class="rounded-4"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.468998018955!2d31.432870312056416!3d29.99468687484426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145840c63ce95b0d%3A0x7db37f52d34a4d19!2sThe%20Higher%20Institute%20For%20Applied%20Arts%20-%205th%20Compound!5e0!3m2!1sen!2seg!4v1713969931046!5m2!1sen!2seg"
-                style="
-                  height: 650px;
-                  background-color: rgba(255, 255, 255, 0.479);
-                  box-shadow: 0px 5px 7px 0px #6666660c,
-                    5px 0px 7px 0px #6666660c, -5px 0px 7px 0px #6666660c,
-                    0px -5px 7px 0px #6666660c;
-                "
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
+      <div class="row mb-5">
+        <div class="col-12">
+          <!-- google maps location -->
+          <div class="card p-0 my-2 border-0 rounded-4">
+            <iframe
+              class="rounded-4"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.468998018955!2d31.432870312056416!3d29.99468687484426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145840c63ce95b0d%3A0x7db37f52d34a4d19!2sThe%20Higher%20Institute%20For%20Applied%20Arts%20-%205th%20Compound!5e0!3m2!1sen!2seg!4v1713969931046!5m2!1sen!2seg"
+              style="
+                height: 650px;
+                background-color: rgba(255, 255, 255, 0.479);
+                box-shadow: 0px 5px 7px 0px #6666660c, 5px 0px 7px 0px #6666660c,
+                  -5px 0px 7px 0px #6666660c, 0px -5px 7px 0px #6666660c;
+              "
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
+      </div>
     </div>
     <!-- footer -->
     <footer

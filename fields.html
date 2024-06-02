@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="CSS/style.css" />
     <script defer src="script/bootstrap.bundle.min.js"></script>
     <script defer src="script/index.js"></script>
+    <script defer src="script/navbar.js"></script>
   </head>
   <body>
     <!-- navbar -->
     <nav
-      class="navbar navbar-expand-lg bg-body-tertiary position-sticky top-0 z-1"
+      class="navbar navbar-expand-lg bg-body-tertiary d-flex flex-column position-relative z-1"
     >
       <div class="container-fluid">
         <a class="navbar-brand ms-4" href="#"
@@ -36,10 +37,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0 fs-5">
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="index.html"
+              <a class="nav-link active" aria-current="page" href="index.html"
                 >Home</a
               >
             </li>
@@ -49,8 +47,11 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active"
-              style="color: #00d084" aria-current="page" href="fields.html"
+              <a
+                class="nav-link active"
+                style="color: #00d084"
+                aria-current="page"
+                href="fields.html"
                 >Fields</a
               >
             </li>
@@ -67,28 +68,47 @@
                 >Contact us</a
               >
             </li>
+            <!-- search button -->
             <li class="nav-item">
-              <button type="button" class="btn">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-search"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
-                  ></path>
-                </svg>
+              <button
+                class="border-0 p-1"
+                style="background-color: inherit"
+                id="srch-btn"
+              >
+                <img
+                  id="srch-img"
+                  style="height: 30px; width: 30px"
+                  src="Assets/images/51.png"
+                  alt=""
+                />
               </button>
             </li>
           </ul>
 
-          <a href="signin.html">
-          <button class="button fs-5 mx-5 px-5 py-1" type="submit">
+          <button
+            class="button fs-5 mx-5 px-5 py-1"
+            onclick="location.href='signin.html'"
+            type="submit"
+          >
             Sign in
-          </button></a>
+          </button>
+        </div>
+      </div>
+      <div
+        id="srch-toggler"
+        class="position-absolute d-flex justify-content-center bg-body- collapse d-none"
+        style="height: 50px; width: 100%; top: 76px; background-color: inherit"
+      >
+        <div class="">
+          <input
+            type="text"
+            id="srch-field"
+            class="form-control me-5"
+            style="width: 420px"
+            placeholder="Search"
+            aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-default"
+          />
         </div>
       </div>
     </nav>
@@ -121,7 +141,9 @@
     <!-- middle -->
     <div class="container pb-5 pt-3">
       <div class="row fs-1 fw-bold txt-darkblue my-4 pb-3 mx-auto">
-        <div class="fs-1 fw-bold txt-darkblue text-center">Discover Our Fields</div>
+        <div class="fs-1 fw-bold txt-darkblue text-center">
+          Discover Our Fields
+        </div>
       </div>
       <div class="row">
         <div
@@ -147,10 +169,18 @@
           <div
             class="my-auto h-100 w-75 py-3 px-2 d-flex flex-column justify-content-around position-relative"
           >
-          <div class="bg-green position-absolute fs-4 fw-bold text-center text-white" 
-          style="height: 84px;width: 74px; right: -134px; top: -50px;border-bottom-right-radius: 16px;">
-          4 <br>Years
-        </div>
+            <div
+              class="bg-green position-absolute fs-4 fw-bold text-center text-white"
+              style="
+                height: 84px;
+                width: 74px;
+                right: -134px;
+                top: -50px;
+                border-bottom-right-radius: 16px;
+              "
+            >
+              4 <br />Years
+            </div>
             <span class="fs-1 fw-semibold txt-green">Computer Science</span>
             <p class="fs-4 text-white">
               Computer Science is a field that encompasses the study of
@@ -167,7 +197,18 @@
           <div
             class="my-auto h-100 w-75 py-3 px-2 d-flex flex-column justify-content-around position-relative"
           >
-          <div class="bg-green position-absolute fs-4 fw-bold text-center text-white" style="height: 84px;width: 74px; right: -134px; top: -50px;border-bottom-right-radius: 16px;">4 <br>Years</div>
+            <div
+              class="bg-green position-absolute fs-4 fw-bold text-center text-white"
+              style="
+                height: 84px;
+                width: 74px;
+                right: -134px;
+                top: -50px;
+                border-bottom-right-radius: 16px;
+              "
+            >
+              4 <br />Years
+            </div>
 
             <span class="fs-1 fw-semibold txt-darkblue"
               >Archetictural Engineering</span
@@ -221,10 +262,20 @@
           style="height: 414px; background-color: #192f59"
         >
           <div
-            class="my-auto h-100 w-75 py-3 px-2 d-flex flex-column justify-content-around
-             position-relative"
+            class="my-auto h-100 w-75 py-3 px-2 d-flex flex-column justify-content-around position-relative"
           >
-          <div class="bg-green position-absolute fs-4 fw-bold text-center text-white" style="height: 84px;width: 74px; right: -134px; top: -50px;border-bottom-right-radius: 16px;">4 <br>Years</div>
+            <div
+              class="bg-green position-absolute fs-4 fw-bold text-center text-white"
+              style="
+                height: 84px;
+                width: 74px;
+                right: -134px;
+                top: -50px;
+                border-bottom-right-radius: 16px;
+              "
+            >
+              4 <br />Years
+            </div>
 
             <span class="fs-1 fw-semibold txt-green"
               >Business Adminstration</span
@@ -245,7 +296,18 @@
           <div
             class="my-auto h-100 w-75 py-3 px-2 d-flex flex-column justify-content-around position-relative"
           >
-          <div class="bg-green position-absolute fs-4 fw-bold text-center text-white" style="height: 84px;width: 74px; right: -134px; top: -50px;border-bottom-right-radius: 16px;">4 <br>Years</div>
+            <div
+              class="bg-green position-absolute fs-4 fw-bold text-center text-white"
+              style="
+                height: 84px;
+                width: 74px;
+                right: -134px;
+                top: -50px;
+                border-bottom-right-radius: 16px;
+              "
+            >
+              4 <br />Years
+            </div>
 
             <span class="fs-1 fw-semibold txt-darkblue"
               >Electric Engineering</span
@@ -495,6 +557,5 @@
         </div>
       </div>
     </footer>
-    
   </body>
 </html>
