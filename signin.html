@@ -9,11 +9,9 @@
     <script defer src="script/bootstrap.bundle.min.js"></script>
     <script defer src="script/signin.js"></script>
   </head>
-  <body>
+  <body class="vh-100">
     <!-- navbar -->
-    <nav
-      class="navbar navbar-expand-lg bg-body-tertiary position-sticky top-0 z-1"
-    >
+    <nav class="navbar navbar-expand-lg bg-body-tertiary z-1">
       <div class="container-fluid">
         <a class="navbar-brand ms-4" href="#"
           ><img
@@ -92,9 +90,9 @@
       </div>
     </nav>
     <!-- signin form -->
-    <div class="container-fluid d-flex flex-column" style="min-height: 100vh">
+    <div class="container-fluid d-flex flex-column" style="height: 717.35px">
       <div class="row flex-grow-1">
-        <div class="col-lg-4 px-0 bg-table vh-100 d-flex flex-column">
+        <div class="col-lg-4 px-0 bg-table d-flex flex-column">
           <div class="mx-auto pt-5 h-100" style="width: 85%">
             <div class="w-75">
               <div class="fw-bold fs-3 pb-3" style="color: #1e1e1e">
@@ -399,10 +397,10 @@
         </div>
 
         <!-- carousel -->
-        <div class="col-lg-8 px-0 h-100 d-flex flex-column">
+        <div class="col-lg-8 px-0 d-flex flex-column">
           <div
             id="carouselExampleDark"
-            class="carousel carousel-dark slide"
+            class="carousel carousel-dark slide w-100 h-100"
             data-bs-ride="carousel"
           >
             <!-- indicators -->
@@ -430,7 +428,7 @@
               ></button>
             </div>
             <!-- items -->
-            <div class="carousel-inner vh-100">
+            <div class="carousel-inner h-100">
               <div
                 class="carousel-item active h-100 w-100"
                 data-bs-interval="4000"
