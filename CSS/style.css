@@ -266,3 +266,10 @@ input::-webkit-inner-spin-button {
     border-color: #00D0844D;
     background-color: #EBFCF6;
 }
+
+.hover4:hover .hover4-bg{
+    background-color: #00d084;
+}
+.hover4:hover .hover4-txt{
+    color: #00d084;
+}
