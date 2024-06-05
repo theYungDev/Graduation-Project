@@ -14,6 +14,18 @@
 .bg-green{
     background-color:#00d084;
 }
+.signin-btn{
+    background-color:inherit;
+    border: 2px #00d084 solid;
+    color: #00d084;
+    transition: 0.2s;
+}
+.signin-btn:hover{
+    background-color:#00d084;
+    color: white;
+
+    transition: 0.2s;
+}
 .bg-light-green{
     background-color:#00d08418;
 }
